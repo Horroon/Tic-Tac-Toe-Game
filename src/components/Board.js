@@ -4,7 +4,7 @@ import "../index.css";
 
 function Board({ squares, onClick }) {
   const renderSquare = (i) => {
-    return <Square value={squares[i]} onClick={onClick} />;
+    return <Square value={squares[i]} onClick={() => onClick(i)} />;
   };
   return (
     <div>
